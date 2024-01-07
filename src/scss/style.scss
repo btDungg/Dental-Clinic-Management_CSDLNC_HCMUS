@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&family=Comfortaa:wght@700&display=swap");
+@import 'variables';
+@import 'home';
+@import 'signup_login';
+@import 'navbar';
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    height: 100vh;
+    display: flex;
+}
+

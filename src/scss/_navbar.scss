@@ -1,0 +1,20 @@
+.navbar{
+    border-radius: 0.5rem;
+    
+    background-color: $violet-bg-color;
+    width: 100vw;
+    display: flex;
+    height: 10rem;
+    justify-content: space-around;
+    .nav_symbol{
+        margin-top:1.5rem;
+        height: 7rem;
+        width: 7rem;
+        border-radius: 2rem;
+        background-color: $light-bg-color;
+    }
+    .btn_nav{
+        font-size: 7rem;
+        text-align: center;
+    }
+}
