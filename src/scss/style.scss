@@ -2,7 +2,8 @@
 @import 'variables';
 @import 'home';
 @import 'signup_login';
-@import 'navbar';
+@import 'shedule';
+@import 'add';
 * {
     box-sizing: border-box;
 }
@@ -10,5 +11,6 @@
 #app {
     height: 100vh;
     display: flex;
+    flex-direction: column;
 }
 

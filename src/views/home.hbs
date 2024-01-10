@@ -1,1 +1,4 @@
-{{>navAdmin}}
+{{#if isAdmin}}{{>navAdmin}} {{/if}}
+{{#if isStaff}}{{>navStaff}} {{/if}}
+
+{{>contentHome}}

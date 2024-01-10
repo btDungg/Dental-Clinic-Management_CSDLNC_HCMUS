@@ -1,0 +1,90 @@
+a {
+    text-decoration: none;
+}
+
+.head {
+    font-family: $base-font-family ;
+    background-color: $violet-bg-color;
+    height: 17rem;
+
+    .h {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem;
+
+        .title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: $order-bg-color;
+            height: 5rem;
+        }
+
+        .acc {
+            text-align: center;
+
+            img {
+                height: 2rem;
+                width: 2rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+
+        }
+
+    }
+
+    .navbar {
+        border-radius: 0.5rem;
+
+        width: 100vw;
+        display: flex;
+        height: 10rem;
+        justify-content: space-around;
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav_symbol {
+            margin-top: 1.5rem;
+            height: 7rem;
+            width: 7rem;
+            border-radius: 2rem;
+            background-color: $light-bg-color;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                height: 5rem;
+                width: 5rem;
+            }
+        }
+
+        .btn_nav {
+            font-size: 5rem;
+            text-align: center;
+        }
+    }
+
+}
+
+.content_home {
+    height: 100vh;
+    background-color: $order-bg-color;
+        img {
+            width: 100vw;
+            object-fit: contain;
+
+        }
+   
+
+}
+
+[class*="btn-"]{
+    &:hover{
+        transform: scale(1.01);
+    }
+    cursor: pointer;
+}
