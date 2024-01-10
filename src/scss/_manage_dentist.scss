@@ -1,7 +1,10 @@
 
+
+
 .container_dentist{
     margin-top: 0.5rem;
     border-radius: 1rem ;
+    height: 100%;
     
     background-color: $order-bg-color;
     .title{
@@ -12,7 +15,23 @@
         font-weight: 700;
         text-transform: uppercase;
     }
- 
+    .right_d{
+        margin-right: 0.5rem;
+        display: flex ;
+        justify-content: flex-end;
+        input{
+            border-radius: 1rem;
+            font-size: 1rem;
+            font-weight: 400;
+            
+        }
+        button{
+            background-color: $base-color;
+            border-radius: 0.5rem;
+            color: $light-bg-color;
+        }
+    }
+
     .d_head{
         border-bottom: 0.125rem solid $sub-color-dark;
             font-size: 1.5rem;
@@ -34,7 +53,7 @@
     }
     .dentist_contnent{
         overflow: auto;
-        height: 40vh;
+        height: 50vh;   
     }
 
 

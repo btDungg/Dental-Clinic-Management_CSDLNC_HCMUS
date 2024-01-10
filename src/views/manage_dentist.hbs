@@ -1,7 +1,6 @@
 {{#if isAdmin}}{{>navAdmin}} {{/if}}
 {{#if isStaff}}{{>navStaff}} {{/if}}
-{{#if isDentist}}{{>navStaff}} {{/if}}
-
+{{#if isDentist}}{{>navDentist}} {{/if}}
 <div class="container_dentist">
     <div style="display: flex;justify-content: space-between;">
         <div class="title" >
@@ -9,14 +8,16 @@
             
         </div>
         
-        <div>
-
-        <input class="title" type="text" placeholder="Search..">
-        {{#if isAdmin}}
-        <a class="title" href="#">
-            <i class='bx bx-plus'></i>
-        </a>
-        {{/if}}
+        <div class="right_d">
+            <form action="#">
+                <input class="title search" type="text" placeholder="Search..">
+                <button type="submit" value="Tìm kiếm" id="Tìm kiếm">Tìm kiếm </button>
+            </form>
+            {{#if isAdmin}}
+            <a class="title" href="#">
+                <i class='bx bx-plus'></i>
+            </a>
+            {{/if}}
         </div>
     </div>
     <div class="list_dentist d_head">

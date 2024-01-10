@@ -1,22 +1,24 @@
 {{#if isAdmin}}{{>navAdmin}} {{/if}}
 {{#if isStaff}}{{>navStaff}} {{/if}}
-{{#if iscus}}{{>navStaff}} {{/if}}
+{{#if isDentist}}{{>navDentist}} {{/if}}
 
 <div class="container_cus">
     <div style="display: flex;justify-content: space-between;">
         <div class="title" >
-            Danh sách nhân viên
+            Danh sách bệnh nhân
             
         </div>
         
-        <div>
+       <div class="right_d">
+            <form action="#">
+                <input class="title search" type="text" placeholder="Search..">
+                <button type="submit" value="Tìm kiếm" id="Tìm kiếm">Tìm kiếm </button>
+            </form>
 
-        <input class="title" type="text" placeholder="Search..">
-        
-        <a class="title" href="#">
-            <i class='bx bx-plus'></i>
-        </a>
-        
+            <a class="title" href="#">
+                <i class='bx bx-plus'></i>
+            </a>
+            
         </div>
     </div>
     <div class="list_cus d_head">
