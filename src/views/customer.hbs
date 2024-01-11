@@ -1,3 +1,7 @@
+<section id="overlay">
+    {{>addCus}}
+</section>
+
 {{#if isAdmin}}{{>navAdmin}} {{/if}}
 {{#if isStaff}}{{>navStaff}} {{/if}}
 {{#if isDentist}}{{>navDentist}} {{/if}}
@@ -15,23 +19,24 @@
                 <button type="submit" value="Tìm kiếm" id="Tìm kiếm">Tìm kiếm </button>
             </form>
 
-            <a class="title" href="#">
-                <i class='bx bx-plus'></i>
-            </a>
+            <div class="title" href="#">
+                <i class='bx bx-plus' onclick="on()"></i>
+            </div>
 
         </div>
     </div>
     <div class="list_cus d_head">
         <div>#</div>
-        <div>Mã nhân viên</div>
+        <div>Mã bệnh nhân</div>
         <div>Họ Tên</div>
         <div>Ngày sinh</div>
         <div>giới tính</div>
         <div>Địa chỉ</div>
         <div>SDT</div>
         <div>Ghi chú</div>
+        <div>Thêm cuộc hẹn</div>
         <div>Chi tiết</div>
-        <div></div>
+        <div>Xoá bênh nhân</div>
     </div>
     <div class="cus_contnent">
         <div class="list_cus">
@@ -44,14 +49,20 @@
             <div>Số 5657, Đường Hùng Vương, Phường An Bình, Thành phố Biên Hòa, Đồng Nai</div>
             <div>123456777</div>
             <div>{{note}}Khoong ăn cay ăn chay ăn măn.Khoong ăn cay ăn chay ăn măn.Khoong ăn cay ăn chay ăn măn.Khoong
-                ăn cay ăn chay ăn măn.Khoong ăn cay ăn chay ăn măn.Khoong ăn cay ăn chay ăn măn. </div>
+                ăn cay ăn chay ăn măn.Khoong ăn cay ăn chay ăn măn.Khoong ăn cay ăn chay ăn măn.
+            </div>
+            <div>
+                <a href="{{#if isAdmin}}/admin/add_schedule{{/if}} {{#if isStaff}}/staff/add_schedule{{/if}} {{#if isDentist}}/dentist/add_schedule{{/if}}">
+                <i class='bx bx-plus bbtn-plus'></i>
+                </a>
+            </div>
             <div>
                 <a
                     href="{{#if isAdmin}}/admin/customer/detail{{/if}} {{#if isStaff}}/staff/customer/detail{{/if}} {{#if isDentist}}/dentist/customer/detail{{/if}}">
-                    <i class="bx bx-file-find btn-detail"></i>
+                    <i class="bx bx-file-find bbtn-detail"></i>
                 </a>
             </div>
-            <div><i class="bx bx-trash btn-trash"></i></div>
+            <div><i class="bx bx-trash bbtn-trash"></i></div>
 
         </div>
 
@@ -62,6 +73,8 @@
 
 </div>
 
+
+<script src="/js/overlay.js"></script>
 
 {{!-- <section id="pagination">
     <button id="previous-page">

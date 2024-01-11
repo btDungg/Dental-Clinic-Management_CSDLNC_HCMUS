@@ -1,0 +1,40 @@
+<div class="addCus">
+    <div class="cus_head">Thêm bênh nhân</div>
+    <form action="#" class="form_addcus">
+        <div class="add_cus_row">Họ tên
+            <input type="text" id="addCusName">
+        </div>
+        <div class="add_cus_row">
+            Giới tính
+            <div clas="gender">
+                <div >
+                    <input type="radio" id="addCusMale" name="gender" value="Nam">
+                    <label for="male">Nam</label>
+                </div>
+                <div>
+                    <input type="radio" id="addCusFemale" name="gender" value="Nữ">
+                    <label for="female">Nữ</label>
+                </div>
+            </div>
+        </div>
+        <div class="add_cus_row">
+            Ngày sinh
+            <input type="date" name="birth" id="addCusbirh">
+        </div>
+        <div class="add_cus_row">
+            Địa chỉ
+            <input type="text" id="addCusAddress">
+        </div>
+        <div class="add_cus_row">
+            Số điện thoại
+            <input type="tel" id="addCusPhone" name="phone" pattern="" />
+        </div>
+        <div class="xacnhan">
+            <button type="submit" value="Thêm bênh nhân">Xác nhận</button>
+        </div>
+        
+    </form>
+    <div class="bbtn-close" onclick="off()">
+        <i class="bx bx-x"></i>
+    </div>
+</div>

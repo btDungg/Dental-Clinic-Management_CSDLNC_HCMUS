@@ -1,0 +1,87 @@
+{{#if isAdmin}}{{>navAdmin}} {{/if}}
+{{#if isStaff}}{{>navStaff}} {{/if}}
+{{#if isDentist}}{{>navDentist}} {{/if}}
+<form action="#" class="shedule-form">
+  <div class="shedule_head">
+    Thêm cuộc hẹn
+  </div>
+
+  <div class="content">
+    <div class="row">
+      <div>
+        Ngày điều trị
+      </div>
+      <div>
+        <input type="date">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div>
+        Thời gian khám:
+      </div>
+      <input type="time">
+    </div>
+    <div class="row">
+      <div>
+        Tình trạng:
+      </div>
+      <select name="tinhtrang" id="tinhtrang">
+        <option value="Khám mới">Khám mới</option>
+        <option value="Tái khám">Tái khám</option>
+      </select>
+    </div>
+    <div class="row">
+      <div>
+        Bác sĩ khám
+      </div>
+      <select name="tinhtrang" id="tinhtrang">
+        <option value="Khám mới">Khám mới</option>
+        <option value="Tái khám">Tái khám</option>
+      </select>
+    </div>
+    <div class="row">
+      <div>
+        Trợ khám
+      </div>
+      <select name="tinhtrang" id="tinhtrang">
+        <option value="Khám mới">Khám mới</option>
+        <option value="Tái khám">Tái khám</option>
+      </select>
+    </div>
+    <div class="row">
+      <div>
+        Phòng khám:
+      </div>
+      <select name="tinhtrang" id="tinhtrang">
+        <option value="Khám mới">Khám mới</option>
+        <option value="Tái khám">Tái khám</option>
+      </select>
+    </div>
+    <div class="row">
+      <div>
+        Danh mục điều trị
+      </div>
+      <select name="tinhtrang" id="tinhtrang">
+        <option value="Khám mới">Khám mới</option>
+        <option value="Tái khám">Tái khám</option>
+      </select>
+    </div>
+    <div class="row">
+      <div>
+        Răng điều trị
+      </div>
+      <select name="tinhtrang" id="tinhtrang">
+        <option value="Khám mới">Khám mới</option>
+        <option value="Tái khám">Tái khám</option>
+      </select>
+    </div>
+
+
+   
+
+  </div>
+
+  <button type="submit" value="add-shedule">Xác nhận</button>
+
+</form>

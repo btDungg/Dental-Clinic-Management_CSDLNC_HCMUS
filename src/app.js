@@ -78,22 +78,35 @@ app.get("/dentist/list_staff", (req, res) => {
 });
 
 
-app.get("/staff/shedule", (req, res) => {
-    res.render("shedule", {
+app.get("/staff/schedule", (req, res) => {
+    res.render("schedule", {
         isStaff: true,
-        title: "Shedule Page",
+        title: "schedule Page",
     });
 });
-app.get("/add_shedule", (req, res) => {
-    res.render("add_shedule", {
-        title: "Add Shedule Page",
+app.get("/staff/add_schedule", (req, res) => {
+    res.render("add_schedule", {
+        isStaff: true,
+        title: "Add schedule Page",
+    });
+});
+app.get("/dentist/add_schedule", (req, res) => {
+    res.render("add_schedule", {
+        isDentist: true,
+        title: "Add schedule Page",
+    });
+});
+app.get("/admin/add_schedule", (req, res) => {
+    res.render("add_schedule", {
+        isAdmin: true,
+        title: "Add schedule Page",
     });
 });
 
-app.get("/admin/shedule", (req, res) => {
-    res.render("shedule", {
+app.get("/admin/schedule", (req, res) => {
+    res.render("schedule", {
         isAdmin: true,
-        title: "Shedule Page",
+        title: "schedule Page",
     });
 });
 
