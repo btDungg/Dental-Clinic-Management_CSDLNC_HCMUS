@@ -96,12 +96,16 @@ a {
     cursor: pointer;
 }
 
-.bbtn-trash{
-    color: $danger-color;
+.bbtn-edit{
+    color:$base-color ;
     
 }
 .bbtn-detail{
     color: $green-active;
+    
+}
+.bbtn-trash{
+    color: $danger-color;
     
 }
 .bbtn-plus{

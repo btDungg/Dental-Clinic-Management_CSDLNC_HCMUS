@@ -10,6 +10,34 @@
         font-weight: 700;
         text-transform: uppercase;
     }
+    .right_d{
+        margin-right: 0.5rem;
+        display: flex ;
+        justify-content: flex-end;
+        input{
+            border-radius: 1rem;
+            font-size: 1rem;
+            font-weight: 400;
+            
+        }
+        button{
+            background-color: $base-color;
+            border-radius: 0.5rem;
+            color: $light-bg-color;
+        }
+        .search{
+            padding: 0.25rem 0.5rem;
+        }
+
+        .filter{
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            option{
+                font-family: $base-font-family;
+            }
+        }
+    }
+
     .table{
         width: 90%;
         height: 60%;
@@ -28,7 +56,7 @@
         .t_row{
             font-size: 1rem;
             display: grid;
-            grid-template-columns: 1fr 3fr 2fr 2fr 3fr 2fr 1fr 1fr 1fr;
+            grid-template-columns: 3fr 2fr 2fr 3fr 2fr 1fr 1fr 1fr 1fr;
             margin: 1rem 0;
 
             div {

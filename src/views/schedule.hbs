@@ -6,15 +6,28 @@
         <div class="title">
             Danh sách lịch hẹn
         </div>
-        <a class="title" href="/add_schedule">
+        {{!-- <a class="title" href="/add_schedule">
             <i class='bx bx-plus'></i>
-        </a>
+        </a> --}}
+        <div class="right_d ">
+            <form action="#">
+                <select name="filter" id="" class="filter">
+                    <option value="customer">Lọc theo bệnh nhân</option>
+                    <option value="room">Lọc theo phòng khám</option>
+                    <option value="dentist">Lọc theo nha sĩ</option>
+                </select>
+                <input class="title search" type="text" placeholder="Search..">
+                <button type="submit" value="Tìm kiếm" id="Tìm kiếm">Tìm kiếm </button>
+            </form>
+            <a class="title" href="#">
+                <i class='bx bx-plus'></i>
+            </a>
+        </div>
     </div>
 
 
     <div class="table">
         <div class="t_row t_head">
-            <div>#</div>
             <div>Họ tên bênh nhân</div>
             <div>Bác sĩ</div>
             <div>Trợ khám</div>
@@ -22,13 +35,12 @@
             <div>Phòng khám</div>
 
             <div>Tình trạng</div>
-            <div>Chi tiết</div>
+            <div></div>
             <div></div>
         </div>
 
         <div class="t_content">
             <div class="t_row">
-                <div>{{stt}}1</div>
                 <div>{{id}}Nguyễn Văn A</div>
                 <div>{{id}}Nguyễn Văn A</div>
                 <div>{{id}}Nguyễn Văn A</div>
@@ -36,7 +48,10 @@
                 <div>c171</div>
                 <div>{{sl}}Tái khám</div>
                 <div><i class="bx bx-file-find bbtn-detail"></i></div>
-                <div><i class="bx bx-trash bbtn-trash"></i></div>
+                <div><i class='bx bx-edit-alt bbtn-edit'></i></div>
+                {{#if isAdmin}}<div><i class="bx bx-trash bbtn-trash"></i></div>{{/if }}
+                {{#if isStaff}}<div><i class="bx bx-trash bbtn-trash"></i></div>{{/if }}
+                {{#if isDentist}}<div></div>{{/if }}
             </div>
 
 

@@ -170,10 +170,10 @@ app.get("/dentist/profile", (req, res) => {
 
 
 
-app.get("/admin/medecion", (req, res) => {
-    res.render("medecion", {
+app.get("/admin/medicine", (req, res) => {
+    res.render("medicine", {
         isAdmin: true,
-        title: "Medecion Page",
+        title: "Medicine Page",
     });
 });
 

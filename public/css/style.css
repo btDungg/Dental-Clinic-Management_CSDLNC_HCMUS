@@ -81,12 +81,16 @@ a p {
   transform: scale(1.01);
 }
 
-.bbtn-trash {
-  color: #dc3545;
+.bbtn-edit {
+  color: #243c74;
 }
 
 .bbtn-detail {
   color: #00a67e;
+}
+
+.bbtn-trash {
+  color: #dc3545;
 }
 
 .bbtn-plus {
@@ -320,6 +324,31 @@ a p {
   font-weight: 700;
   text-transform: uppercase;
 }
+.shedule_container .right_d {
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.shedule_container .right_d input {
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.shedule_container .right_d button {
+  background-color: #243c74;
+  border-radius: 0.5rem;
+  color: #f2f4f7;
+}
+.shedule_container .right_d .search {
+  padding: 0.25rem 0.5rem;
+}
+.shedule_container .right_d .filter {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.shedule_container .right_d .filter option {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
 .shedule_container .table {
   width: 90%;
   height: 60%;
@@ -338,7 +367,7 @@ a p {
 .shedule_container .table .t_row {
   font-size: 1rem;
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr 2fr 3fr 2fr 1fr 1fr 1fr;
+  grid-template-columns: 3fr 2fr 2fr 3fr 2fr 1fr 1fr 1fr 1fr;
   margin: 1rem 0;
 }
 .shedule_container .table .t_row div {
@@ -428,7 +457,7 @@ a p {
 .container_dentist .list_dentist {
   font-size: 1rem;
   display: grid;
-  grid-template-columns: 1fr 2fr 4fr 3fr 2fr 2fr 6fr 1fr;
+  grid-template-columns: 2fr 4fr 3fr 2fr 2fr 6fr 1fr;
   margin: 1rem 2rem;
 }
 .container_dentist .list_dentist div {
@@ -454,7 +483,7 @@ a p {
 .container_dentist .list_medecion {
   font-size: 1rem;
   display: grid;
-  grid-template-columns: 1fr 2fr 4fr 2fr 2fr 2fr 2fr 1fr;
+  grid-template-columns: 2fr 4fr 2fr 2fr 2fr 2fr 1fr;
   margin: 1rem 2rem;
 }
 .container_dentist .list_medecion div {
@@ -626,7 +655,7 @@ a p {
 .container_cus .list_cus {
   font-size: 1rem;
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 2fr 1fr 6fr 2fr 6fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 2fr 1fr 6fr 2fr 6fr 1fr 1fr 1fr;
   margin: 1rem 2rem;
 }
 .container_cus .list_cus div {
@@ -673,7 +702,7 @@ a p {
 }
 
 .container-detail-cus {
-  margin-top: 0.5rem;
+  margin-top: 0;
   border-radius: 1rem;
   height: 100%;
   display: flex;
@@ -690,12 +719,13 @@ a p {
   text-transform: uppercase;
 }
 .container-detail-cus .content {
-  height: 80%;
+  height: 100%;
   border-radius: 1rem;
   margin: 2rem;
   margin-bottom: 1rem;
   background-color: #7c8cac;
   padding: 2rem;
+  overflow: auto;
 }
 .container-detail-cus .content div {
   font-size: 1.25rem;
@@ -703,6 +733,42 @@ a p {
   margin: 0.5rem;
   color: #fff;
   font-weight: 500;
+}
+
+.news {
+  width: 98%;
+  border: 1px solid black;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  background-color: #1a8cff;
+  color: white;
+  height: 50px;
+  opacity: 0.5;
+}
+
+.news-content {
+  padding: 7px;
+  border: 0.5px solid #d9d9d9;
+  color: #0084ff;
+  display: none;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.news-content.show {
+  display: block;
+}
+
+.news-header.active {
+  opacity: 1;
+  color: white;
 }
 
 .head_profile {
