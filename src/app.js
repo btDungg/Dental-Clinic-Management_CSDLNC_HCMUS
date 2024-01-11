@@ -99,42 +99,77 @@ app.get("/admin/shedule", (req, res) => {
 
 app.get("/admin/customer", (req, res) => {
     res.render("customer", {
-        isAdmin:true,
+        isAdmin: true,
         title: "Customer Page",
     });
 });
 app.get("/dentist/customer", (req, res) => {
     res.render("customer", {
-        isDentist:true,
+        isDentist: true,
         title: "Customer Page",
     });
-    });
+});
 app.get("/staff/customer", (req, res) => {
-        res.render("customer", {
-            isStaff:true,
-            title: "Customer Page",
-        });
+    res.render("customer", {
+        isStaff: true,
+        title: "Customer Page",
     });
+});
 
-    app.get("/staff/profile", (req, res) => {
-        res.render("profile", {
-            isStaff:true,
-            title: "Profile Page",
-        });
+app.get("/admin/customer/detail", (req, res) => {
+    res.render("detailcustomer", {
+        isAdmin: true,
+        title: "Detail Customer Page",
     });
+});
+app.get("/dentist/customer/detail", (req, res) => {
+    res.render("detailcustomer", {
+        isDentist: true,
+        title: "Detail Customer Page",
+    });
+});
+app.get("/staff/customer/detail", (req, res) => {
+    res.render("detailcustomer", {
+        isStaff: true,
+        title: "Detail Customer Page",
+    });
+});
 
-    app.get("/admin/profile", (req, res) => {
-        res.render("profile", {
-            isAdmin:true,
-            title: "Profile Page",
-        });
+app.get("/staff/profile", (req, res) => {
+    res.render("profile", {
+        isStaff: true,
+        title: "Profile Page",
     });
-    app.get("/dentist/profile", (req, res) => {
-        res.render("profile", {
-            isDentist:true,
-            title: "Profile Page",
-        });
+});
+
+app.get("/admin/profile", (req, res) => {
+    res.render("profile", {
+        isAdmin: true,
+        title: "Profile Page",
     });
+});
+app.get("/dentist/profile", (req, res) => {
+    res.render("profile", {
+        isDentist: true,
+        title: "Profile Page",
+    });
+});
+
+
+
+app.get("/admin/medecion", (req, res) => {
+    res.render("medecion", {
+        isAdmin: true,
+        title: "Medecion Page",
+    });
+});
+
+app.get("/admin/clinic", (req, res) => {
+    res.render("clinic", {
+        isAdmin: true,
+        title: "Clinic Page",
+    });
+});
 
 app.get("/login", (req, res) => {
     res.render("login", {

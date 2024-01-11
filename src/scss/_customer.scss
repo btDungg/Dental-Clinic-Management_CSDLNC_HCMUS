@@ -39,23 +39,18 @@
     .list_cus{
         font-size: 1rem;
         display: grid;
-        grid-template-columns: 1fr 2fr 2fr 2fr 1fr 6fr 2fr 6fr 1fr;
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr 6fr 2fr 6fr 1fr 1fr;
         margin: 1rem 2rem;
         div {
             text-align: center;
+          
         }
-        i{
-            font-size: 1rem;
-            margin-bottom: 0.25rem;
-        }
+        
     }
     .cus_contnent{
         overflow: auto;
         height: 40vh;
     }
-
-
-
 
 }
 
@@ -92,5 +87,40 @@
             color: $nav-bg;
             background-color: $base-color;
         }
+    }
+}
+
+.container-detail-cus{
+    margin-top: 0.5rem;
+    border-radius: 1rem ;
+    height: 100%;
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-around; 
+    background-color: $order-bg-color;
+    .title{
+        font-family: $base-font-family;
+        font-size: 2rem;
+        margin: 2rem;
+        color: $base-color;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .content{
+    
+     height: 80%;
+     border-radius: 1rem;
+     margin: 2rem;
+     margin-bottom: 1rem;
+    background-color: $sub-color;
+    padding: 2rem;
+    div{
+        font-size: 1.25rem;
+        font-family: $base-font-family;
+        margin: 0.5rem;
+        color: $nav-bg;
+        font-weight: 500;
+    }
     }
 }

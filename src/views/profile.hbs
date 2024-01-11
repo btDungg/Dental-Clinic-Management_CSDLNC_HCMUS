@@ -17,8 +17,11 @@
         <div>Vai trò: {{name}}</div>
         <div>Ngày bắt đầu làm việc: {{name}}</div>
         <div>Tên tài khoản: {{name}}</div>
-        
+
 
     </div>
+    <a href="{{#if isAdmin}}/admin/home{{/if}} {{#if isStaff}}/staff/home{{/if}} {{#if isDentist}}/dentist/home{{/if}}" class="back">
+        Quay lại
+    </a>
 
 </div>

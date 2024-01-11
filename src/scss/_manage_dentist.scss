@@ -30,6 +30,9 @@
             border-radius: 0.5rem;
             color: $light-bg-color;
         }
+        .search{
+            padding: 0.25rem 0.5rem;
+        }
     }
 
     .d_head{
@@ -51,6 +54,37 @@
             margin-bottom: 0.25rem;
         }
     }
+
+    .list_clinic{
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+        margin: 1rem 2rem;
+        div {
+            text-align: center;
+        }
+        i{
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+    }
+
+    .list_medecion{
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr 4fr 2fr 2fr 2fr 2fr 1fr;
+        margin: 1rem 2rem;
+        div {
+            text-align: center;
+        }
+        i{
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+    }
+    
+    .clinic_contnent,
+    .medecion_contnent,
     .dentist_contnent{
         overflow: auto;
         height: 50vh;   

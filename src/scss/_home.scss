@@ -64,6 +64,7 @@ a {
             img {
                 height: 5rem;
                 width: 5rem;
+                margin-top: 0.5rem;
             }
         }
 
@@ -92,4 +93,13 @@ a {
         transform: scale(1.01);
     }
     cursor: pointer;
+}
+
+.btn-trash{
+    color: $danger-color;
+    font-size: 1.25rem;
+}
+.btn-detail{
+    color: $green-active;
+    font-size: 1.5rem;
 }

@@ -28,15 +28,11 @@
         .t_row{
             font-size: 1rem;
             display: grid;
-            grid-template-columns: 1fr 3fr 6fr 3fr 1fr 1fr;
+            grid-template-columns: 1fr 3fr 2fr 2fr 3fr 2fr 1fr 1fr 1fr;
             margin: 1rem 0;
 
             div {
                 text-align: center;
-            }
-            i{
-                font-size: 1rem;
-                margin-bottom: 0.25rem;
             }
         }
         .t_content{
