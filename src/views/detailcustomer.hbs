@@ -1,5 +1,5 @@
 <section id="overlay">
-    {{>addCus}}
+    {{>detailTreatment}}
 </section>
 {{#if isAdmin}}{{>navAdmin}} {{/if}}
 {{#if isStaff}}{{>navStaff}} {{/if}}
@@ -17,67 +17,82 @@
         <div>Tình trạng dị ứng:{{a}}</div>
         <div>Thuốc chống chỉ đinh:{{a}}</div>
 
-<div class="row mt-2">
-                <div class="side">
-                    <div class="news news1">
-                        <div class="news-header" draggable="true">
-                            <span class="arrow">▶</span>
-                            <span>Danh sách kế hoạch điều trị</span>
-                            <span>↕</span>
-                        </div>
-                        <div class="news-content">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                      
-                                        <th scope="col">Mã kế hoạch</th>
-                                        <th scope="col">Trạng thái</th>
-                                        <th scope="col">Mô tả</th>
-                                        <th scope="col">Ngày điều trị</th>
-
-                                        <th scope="col">Ghi chú</th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>2112000</td>
-                                        <td>đã hoàn thành</td>
-                                        <td>không có j đáng ngại</td>
-                                        <td>14/2/2023</td>
-                                        <td>không có j đáng ngại</td>
-                                        <td><i class="bx bx-file-find bbtn-detail " onclick="on()"></i></td>
-                                        <td><i class='bx bx-edit-alt bbtn-edit'></i></td>
-                                        <td><i class='bx bx-notepad'></i></td>
-                                        
-                                    </tr>
-
-                                     <tr>
-                                         <td>2112000</td>
-                                        <td>đã hoàn thành</td>
-                                        <td>không có j đáng ngại</td>
-                                        <td>14/2/2023</td>
-                                        <td>không có j đáng ngại</td>
-                                        <td>1</td>
-                                        <td>1</td>
-                                        <td>1</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+        <div class="add"><a href="/add_treatment"><i class='bx bx-plus'></i>Thêm kế hoạch điều trị</a></div>
+        <div class="row mt-2">
+            <div class="side">
+                <div class="news news1">
+                    <div class="news-header" draggable="true">
+                        <span class="arrow">▶</span>
+                        <span>Danh sách kế hoạch điều trị</span>
+                        <span>↕</span>
                     </div>
+                    <div class="news-content">
+                        <table class="table">
+                            <thead>
+                                <tr>
 
-                    
+                                    <th scope="col">Mã kế hoạch</th>
+                                    <th scope="col">Trạng thái</th>
+                                    <th scope="col">Mô tả</th>
+                                    <th scope="col">Ngày điều trị</th>
+
+                                    <th scope="col">Ghi chú</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="plan-row">
+                                    <td>2112000</td>
+                                    <td class="status">kế hoạch</td>
+                                    <td>không có j đáng ngại</td>
+                                    <td>14/2/2023</td>
+                                    <td>không có j đáng ngại</td>
+                                    <td><i class="bx bx-file-find bbtn-detail " onclick="on()"></i></td>
+                                    <td><i class='bx bx-edit-alt bbtn-edit'></i></td>
+                                    <td><i class='bx bx-notepad'></i></td>
+                                </tr>
+
+                                <tr class="cancelled-row">
+                                    <td>2112000</td>
+                                    <td class="status">đã huỷ</td>
+                                    <td>không có j đáng ngại</td>
+                                    <td>14/2/2023</td>
+                                    <td>không có j đáng ngại</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+
+                                <tr class="completed-row">
+                                    <td>2112000</td>
+                                    <td class="status">đã hoàn thành</td>
+                                    <td>không có j đáng ngại</td>
+                                    <td>14/2/2023</td>
+                                    <td>không có j đáng ngại</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+
+
             </div>
+        </div>
 
 
 
 
-        
+
+
+
+
 
     </div>
 </div>

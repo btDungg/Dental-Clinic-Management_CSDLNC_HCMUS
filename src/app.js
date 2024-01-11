@@ -184,6 +184,15 @@ app.get("/admin/clinic", (req, res) => {
     });
 });
 
+app.get("/add_treatment", (req, res) => {
+    res.render("add_treatment", {
+        title: "Add_treatment Page",
+    });
+});
+
+
+
+
 app.get("/login", (req, res) => {
     res.render("login", {
         title: "Login page",
@@ -194,6 +203,8 @@ app.get("/signup", (req, res) => {
         title: "Signup page",
     });
 });
+
+
 
 app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`);

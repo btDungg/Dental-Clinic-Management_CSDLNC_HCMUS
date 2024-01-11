@@ -1,0 +1,50 @@
+.detailTreament {
+    position: relative;
+    background-color: $light-bg-color;
+    font-family: $base-font-family;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90vw;
+    height: 70vh;
+    margin: 7vh auto;
+
+    .bbtn-close {
+        position: absolute;
+        top: -2.5rem;
+        right: -2.5rem;
+        cursor: pointer;
+        font-size: 2.5rem;
+
+    }
+
+    .head_treat {
+        border-bottom: 0.125rem solid $sub-color-dark;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 0.5rem;
+        height: 10%;
+    }
+
+    .content {
+        height: 90%;
+        background-color: bisque;
+
+        .grid_treat {
+            font-size: 1rem;
+            display: grid;
+            grid-template-columns: 2fr 5fr 3fr 3fr 3fr 5fr 2fr;
+            margin: 1rem 2rem;
+
+            div {
+                text-align: center;
+            }
+        }
+        .g_head{
+            font-size: 1.25rem;
+            font-family: $base-font-family;
+            font-weight: 500;
+            border-bottom: 0.125rem solid $sub-color-dark;
+        }
+
+    }
+}

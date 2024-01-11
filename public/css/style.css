@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&family=Comfortaa:wght@700&display=swap");
 a {
   text-decoration: none;
@@ -535,6 +536,21 @@ a p {
   background-color: #243c74;
 }
 
+.plan-row {
+  background-color: #3498db;
+  /* màu xanh dương cho kế hoạch */
+}
+
+.cancelled-row {
+  background-color: #f8f8b2;
+  /* màu vàng cho đã huỷ */
+}
+
+.completed-row {
+  background-color: #2ecc71;
+  /* màu xanh lá cho đã hoàn thành */
+}
+
 #overlay {
   display: none;
   position: fixed;
@@ -734,6 +750,14 @@ a p {
   color: #fff;
   font-weight: 500;
 }
+.container-detail-cus .content div a {
+  text-decoration: none;
+  color: #ffd580;
+}
+.container-detail-cus .content .add {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .news {
   width: 98%;
@@ -829,6 +853,50 @@ a p {
   font-weight: 600;
   font-family: "Be Vietnam Pro", sans-serif;
   color: #f29339;
+}
+
+.detailTreament {
+  position: relative;
+  background-color: #f2f4f7;
+  font-family: "Be Vietnam Pro", sans-serif;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90vw;
+  height: 70vh;
+  margin: 7vh auto;
+}
+.detailTreament .bbtn-close {
+  position: absolute;
+  top: -2.5rem;
+  right: -2.5rem;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+.detailTreament .head_treat {
+  border-bottom: 0.125rem solid #5d6981;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  height: 10%;
+}
+.detailTreament .content {
+  height: 90%;
+  background-color: bisque;
+}
+.detailTreament .content .grid_treat {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 5fr 3fr 3fr 3fr 5fr 2fr;
+  margin: 1rem 2rem;
+}
+.detailTreament .content .grid_treat div {
+  text-align: center;
+}
+.detailTreament .content .g_head {
+  font-size: 1.25rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  border-bottom: 0.125rem solid #5d6981;
 }
 
 * {
